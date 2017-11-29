@@ -1,11 +1,11 @@
 export default ({ body, title, initialState }) => {
+  // <link rel="stylesheet" href="/assets/index.css" />
   return `
     <!DOCTYPE html>
     <html>
       <head>
         <script>window.__APP_INITIAL_STATE__ = ${initialState}</script>
         <title>${title}</title>
-        <link rel="stylesheet" href="/assets/index.css" />
       </head>
       
       <body>
