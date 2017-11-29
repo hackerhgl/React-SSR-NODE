@@ -14,6 +14,13 @@ server.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 server.use(bodyParser.json());
 
+server.get('/nossr', (req, res) => {
+  res.send(
+    template({
+      title: 'Hello World this is client',
+    }),
+  );
+});
 server.get('/', (req, res) => {
   const isMobile = true;
   const initialState = { isMobile };
